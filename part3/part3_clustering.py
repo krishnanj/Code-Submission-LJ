@@ -1,19 +1,32 @@
 """
-Part 3B - Embedding-based clustering of viral reads
+Part 3 - Embedding-based clustering of viral reads
 
 Approach:
 - For each pool, re-run minimap2 against respiratory references and collect
-  reads that map with breadth-passing identity (MAPQ >= 10, identity >= 0.7).
-- Compute 4-mer frequency profile for each read as the embedding.
-  4-mer profiles are fast, interpretable, and require no model downloads.
-- Reduce dimensions with UMAP (n_components=2) and cluster with HDBSCAN.
-- Label each read by its best-matching reference (taxonomy label from Part 2).
-- Compare cluster assignments to taxonomy labels to assess concordance.
+  reads that pass the same quality filters as Part 2 (MAPQ >= 10, identity >= 0.7).
+- Compute a 4-mer frequency profile (256 dimensions) for each read as the
+  embedding. 4-mer profiles are fast, interpretable, and require no model
+  downloads or GPU.
+- Reduce dimensions with UMAP (cosine distance, n_components=2) and cluster
+  with HDBSCAN.
+- Label each read by its best-matching reference from Part 2 and compare
+  cluster assignments to taxonomy labels to assess concordance.
+
+Seasonal validation:
+  All 17 pools (12 summer, 5 winter) are embedded together. Because the
+  embedding is purely sequence-compositional and has no knowledge of season,
+  any clustering separation between winter-only pathogens (HCoV-229E, influenza A)
+  and year-round pathogens (rhinovirus, SARS-CoV-2) is an independent, orthogonal
+  confirmation of the alignment-based taxonomy in Part 2. HCoV-229E forming
+  clusters entirely absent from summer pools is the key validation signal.
+
+Usage:
+    python3 part3/part3_clustering.py   (run from repository root)
 
 Outputs:
-    data/results/clustering_umap.png        - UMAP coloured by taxonomy label
-    data/results/clustering_hdbscan.png     - UMAP coloured by HDBSCAN cluster
-    data/results/cluster_taxonomy_table.csv - cluster vs taxonomy contingency
+    outputs/figures/clustering_umap.png        - UMAP coloured by taxonomy label
+    outputs/figures/clustering_hdbscan.png     - UMAP coloured by HDBSCAN cluster
+    outputs/tables/cluster_taxonomy_table.csv  - cluster vs taxonomy contingency
 """
 
 import gzip

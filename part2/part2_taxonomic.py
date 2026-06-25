@@ -3,18 +3,29 @@ Part 2 - Taxonomic classification of Zephyr respiratory virus reads
 
 Approach:
 - Map each pool's FASTA file against a curated set of respiratory virus
-  reference genomes using minimap2 (splice-unaware, long-read mode).
+  reference genomes using minimap2 (long-read ONT mode, no secondary alignments).
 - Parse PAF output to compute per-reference read counts, genome coverage
-  breadth (fraction of reference covered by at least one read), and mean depth.
-- Report confidence as mean mapping identity across mapped reads.
+  breadth (fraction of reference covered by at least one read), and mean
+  mapping identity.
+- Genome coverage breadth is the primary confidence metric. It distinguishes
+  genuine infections from cross-mapping artifacts more reliably than read
+  depth alone.
+
+Seasonal validation:
+  12 summer pools (May to June 2026) and 5 winter pools (Nov to Dec 2025) are
+  processed identically. The winter cohort serves as a validation set: HCoV-229E
+  and influenza A are known to circulate exclusively in winter in temperate
+  climates, while rhinovirus circulates year-round. Recovering this pattern
+  without any seasonal tuning confirms the pipeline produces epidemiologically
+  coherent results rather than classification artifacts.
 
 Usage:
-    python part2_taxonomic.py
+    python3 part2/part2_taxonomic.py   (run from repository root)
 
 Outputs:
-    data/results/taxonomy_summary.csv   - per pool per virus summary
-    data/results/coverage_heatmap.png   - breadth of coverage heatmap
-    data/results/read_counts_heatmap.png - read count heatmap
+    outputs/tables/taxonomy_summary.csv   - per pool per virus summary
+    outputs/figures/coverage_heatmap.png  - breadth of coverage heatmap
+    outputs/figures/read_counts_heatmap.png - read count heatmap
 """
 
 import subprocess

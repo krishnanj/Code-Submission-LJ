@@ -1,8 +1,8 @@
-# Zephyr Metagenomic Biosurveillance — Analysis Pipeline
+# Zephyr Metagenomic Biosurveillance Analysis Pipeline
 
 **Jeyashree Krishnan · June 2026**
 
-Analysis pipeline for SecureBio Zephyr metagenomic biosurveillance data: taxonomic classification of 17 pooled nasal-swab sequencing runs (12 summer, 5 winter) and unsupervised embedding-based clustering of viral reads.
+Analysis pipeline for SecureBio Zephyr metagenomic biosurveillance data. Covers taxonomic classification of 17 pooled nasal-swab sequencing runs (12 summer, 5 winter) and unsupervised embedding-based clustering of viral reads. The 5 winter pools were included as a seasonal validation set: known pathogens such as HCoV-229E and influenza A circulate exclusively in winter in temperate climates, so correctly recovering their absence in summer and presence in winter without any seasonal tuning provides an independent check on pipeline reliability.
 
 ---
 
@@ -11,30 +11,29 @@ Analysis pipeline for SecureBio Zephyr metagenomic biosurveillance data: taxonom
 ```
 Code-Submission-LJ/
 ├── part1/
-│   ├── part1_conceptual.md     # Written framework: detecting AI-generated sequences
 │   └── part1_figure.py         # Generates outputs/figures/part1_figure.png
 │
 ├── part2/
 │   └── part2_taxonomic.py      # minimap2-based taxonomic classification (all 17 pools)
 │
 ├── part3/
-│   └── part3_clustering.py     # 4-mer embedding → UMAP → HDBSCAN clustering
+│   └── part3_clustering.py     # 4-mer embedding, UMAP, HDBSCAN clustering
 │
 ├── data/
 │   ├── ref/
 │   │   └── respiratory_refs.fasta   # 17 curated respiratory virus reference genomes
-│   └── fasta/                       # FASTA.gz pool files (not committed — see below)
+│   └── fasta/                       # FASTA.gz pool files (not committed, see below)
 │
 └── outputs/
     ├── figures/
     │   ├── part1_figure.png          # Detection framework diagram
-    │   ├── coverage_heatmap.png      # Genome breadth across all 17 pools × 17 references
+    │   ├── coverage_heatmap.png      # Genome breadth across all 17 pools and 17 references
     │   ├── read_counts_heatmap.png   # Read counts (log scale)
     │   ├── clustering_umap.png       # UMAP projection coloured by species
     │   └── clustering_hdbscan.png    # HDBSCAN cluster assignments
     └── tables/
         ├── taxonomy_summary.csv      # Full per-pool per-species results
-        └── cluster_taxonomy_table.csv # Cluster ID → dominant taxonomy
+        └── cluster_taxonomy_table.csv # Cluster ID to dominant taxonomy
 ```
 
 ---
@@ -60,8 +59,8 @@ FASTA files are not committed due to size. Download from the [SecureBio Zephyr p
 
 | Cohort | Pools | Date range | Pool ID prefix |
 |--------|-------|------------|----------------|
-| Summer | 12 | May–June 2026 | `26MMDD-*` |
-| Winter (seasonal validation) | 5 | Nov–Dec 2025 | `25MMDD-*` |
+| Summer | 12 | May to June 2026 | `26MMDD-*` |
+| Winter (seasonal validation) | 5 | Nov to Dec 2025 | `25MMDD-*` |
 
 The 17 pool IDs analyzed are listed in `outputs/tables/taxonomy_summary.csv`.
 
@@ -73,54 +72,54 @@ Place downloaded `.respiratory.fasta.gz` files in `data/fasta/` before running P
 
 All scripts are run from the **repository root**.
 
-### Part 1 — detection framework figure
+### Part 1, detection framework figure
 ```bash
 python3 part1/part1_figure.py
 # Output: outputs/figures/part1_figure.png
 ```
 
-### Part 2 — taxonomic classification
+### Part 2, taxonomic classification
 ```bash
 python3 part2/part2_taxonomic.py
 # Outputs: outputs/tables/taxonomy_summary.csv
 #          outputs/figures/coverage_heatmap.png
 #          outputs/figures/read_counts_heatmap.png
-# Runtime: ~30–60 min (minimap2 on ONT reads, 17 pools)
+# Runtime: 30 to 60 min (minimap2 on ONT reads, 17 pools)
 ```
 
-### Part 3 — embedding-based clustering
+### Part 3, embedding-based clustering
 ```bash
 python3 part3/part3_clustering.py
 # Outputs: outputs/figures/clustering_umap.png
 #          outputs/figures/clustering_hdbscan.png
 #          outputs/tables/cluster_taxonomy_table.csv
-# Runtime: ~15–30 min (UMAP + HDBSCAN on ~60k reads)
+# Runtime: 15 to 30 min (UMAP + HDBSCAN on ~80k reads)
 ```
 
 ---
 
 ## Methods
 
-### Part 2 — Taxonomic classification
+### Part 2, taxonomic classification
 
 | Parameter | Value |
 |-----------|-------|
 | Aligner | minimap2 `-x map-ont --secondary=no -c` |
-| MAPQ filter | ≥ 10 |
-| Identity filter | ≥ 0.70 |
-| Primary metric | **Genome coverage breadth** (fraction of reference covered by ≥ 1 read) |
+| MAPQ filter | >= 10 |
+| Identity filter | >= 0.70 |
+| Primary metric | **Genome coverage breadth** (fraction of reference covered by at least 1 read) |
 | References | 17 genomes: Rhinovirus A/B/C, RSV A/B, SARS-CoV-2, HCoV-229E, HCoV-OC43, PIV-1/3, Adenovirus C, Metapneumovirus, Bocaparvovirus, Influenza A (HA, PB1, PA, PB2 as separate segments) |
 
 Breadth is the primary confidence metric because it distinguishes genuine infections from cross-mapping artifacts more reliably than read depth alone.
 
-### Part 3 — Embedding-based clustering
+### Part 3, embedding-based clustering
 
 | Parameter | Value |
 |-----------|-------|
 | Embedding | 4-mer frequency profiles, 256 dimensions, L1-normalised per read |
 | Subsampling | Up to 5,000 reads per pool (seed 42) |
-| Dim. reduction | UMAP — cosine distance, `n_neighbors=30`, `min_dist=0.1` |
-| Clustering | HDBSCAN — `min_cluster_size=50`, `min_samples=10` |
+| Dim. reduction | UMAP, cosine distance, `n_neighbors=30`, `min_dist=0.1` |
+| Clustering | HDBSCAN, `min_cluster_size=50`, `min_samples=10` |
 | Labels | Best-hit accession from Part 2 |
 
 ---
@@ -129,9 +128,9 @@ Breadth is the primary confidence metric because it distinguishes genuine infect
 
 - **Rhinovirus A and B** co-circulate year-round across all sampled Boston sites (100% genome breadth in multiple pools both seasons).
 - **SARS-CoV-2** detected in both seasons; strongest signal in winter pool 1206-Copl (100% breadth, 102,983 reads).
-- **HCoV-229E** and **Influenza A** are exclusively winter detections (Nov–Dec 2025 cohort), consistent with temperate-climate seasonality — the pipeline recovers this pattern without any seasonal tuning.
-- Influenza A confirmed by multi-segment concordance: PA, PB1, PB2, and HA all above 70% breadth in Dec 2025 pools.
-- Unsupervised 4-mer clustering (490 clusters, 56,833 summer reads) independently validates alignment taxonomy. Rhinovirus A and B resolve into hundreds of subclusters reflecting serotype-level diversity. SARS-CoV-2 and HCoV-OC43 form ~17 and ~25 tight, well-separated clusters respectively.
+- **HCoV-229E** and **Influenza A** are exclusively winter detections (Nov to Dec 2025 cohort), consistent with temperate-climate seasonality. The pipeline recovers this pattern without any seasonal tuning.
+- Influenza A confirmed by multi-segment concordance. PA, PB1, PB2, and HA all above 70% breadth in Dec 2025 pools.
+- Unsupervised 4-mer clustering (686 clusters, 81,833 reads across all 17 pools) independently validates alignment taxonomy. Rhinovirus A and B resolve into hundreds of subclusters reflecting serotype-level diversity. HCoV-229E forms approximately 75 clusters entirely absent from summer pools, independently confirming the seasonal detection.
 
 ---
 
