@@ -1,0 +1,866 @@
+cluster,taxonomy,count
+-1,Rhinovirus A,1782
+-1,Rhinovirus B,1651
+-1,HCoV-229E,716
+-1,HCoV-OC43,549
+-1,Rhinovirus C,235
+-1,SARS-CoV-2,158
+0,Rhinovirus A,142
+1,Rhinovirus A,58
+2,Rhinovirus B,81
+3,Rhinovirus A,53
+4,Rhinovirus A,76
+5,Rhinovirus A,99
+6,Rhinovirus B,91
+6,Rhinovirus A,26
+7,Rhinovirus A,138
+8,Rhinovirus A,123
+9,Rhinovirus A,126
+10,Rhinovirus A,102
+11,Rhinovirus A,102
+12,Rhinovirus A,84
+13,Rhinovirus A,92
+14,Rhinovirus A,112
+15,Rhinovirus A,65
+16,SARS-CoV-2,51
+16,Rhinovirus B,47
+17,Rhinovirus A,180
+18,Rhinovirus A,83
+19,Rhinovirus A,101
+20,Rhinovirus A,60
+21,Rhinovirus A,110
+22,SARS-CoV-2,194
+23,Rhinovirus A,178
+24,Rhinovirus A,133
+24,Rhinovirus B,34
+25,Rhinovirus A,52
+25,Rhinovirus B,15
+26,Rhinovirus A,120
+27,Rhinovirus A,87
+28,Rhinovirus A,178
+29,Rhinovirus A,67
+29,HCoV-OC43,13
+29,Rhinovirus B,1
+30,Rhinovirus A,187
+31,Rhinovirus A,102
+32,Rhinovirus A,73
+33,Rhinovirus B,52
+33,Rhinovirus C,17
+33,Rhinovirus A,11
+34,Rhinovirus A,98
+35,Rhinovirus B,200
+36,Rhinovirus A,74
+37,Rhinovirus A,121
+38,SARS-CoV-2,126
+39,Rhinovirus A,55
+40,Rhinovirus A,118
+41,Rhinovirus A,119
+42,Rhinovirus A,159
+43,HCoV-OC43,50
+44,Rhinovirus A,97
+45,Rhinovirus A,98
+46,Rhinovirus B,129
+47,Rhinovirus A,110
+48,Rhinovirus A,67
+49,Rhinovirus B,52
+50,HCoV-OC43,60
+51,Rhinovirus B,54
+52,Rhinovirus A,64
+53,Rhinovirus B,100
+54,Rhinovirus B,50
+54,Rhinovirus A,37
+55,Rhinovirus A,60
+56,HCoV-OC43,77
+57,Rhinovirus A,219
+58,Rhinovirus A,128
+59,Rhinovirus A,70
+60,Rhinovirus A,207
+61,Rhinovirus B,64
+62,Rhinovirus A,198
+63,Rhinovirus B,76
+64,Rhinovirus A,157
+64,Rhinovirus B,20
+65,HCoV-OC43,64
+66,Rhinovirus A,83
+67,Rhinovirus A,109
+68,Rhinovirus A,81
+69,Rhinovirus A,61
+70,Rhinovirus A,162
+71,Rhinovirus A,86
+72,Rhinovirus B,152
+73,Rhinovirus B,60
+73,Rhinovirus A,47
+74,Rhinovirus B,64
+74,Rhinovirus A,30
+74,Rhinovirus C,4
+75,Rhinovirus B,62
+76,Rhinovirus B,67
+77,Rhinovirus A,124
+78,Rhinovirus B,78
+79,Rhinovirus B,60
+80,Rhinovirus A,50
+81,SARS-CoV-2,207
+82,Rhinovirus A,96
+83,SARS-CoV-2,128
+84,Rhinovirus C,130
+85,HCoV-OC43,108
+86,Rhinovirus A,130
+87,Rhinovirus A,65
+88,Rhinovirus C,63
+89,SARS-CoV-2,80
+90,HCoV-OC43,45
+90,Rhinovirus B,18
+91,Rhinovirus A,133
+92,Rhinovirus B,95
+93,Rhinovirus A,123
+94,SARS-CoV-2,33
+94,HCoV-OC43,32
+94,Rhinovirus B,27
+95,Rhinovirus A,87
+96,HCoV-229E,94
+96,SARS-CoV-2,20
+97,Rhinovirus B,53
+98,Rhinovirus A,51
+99,Rhinovirus C,103
+99,Rhinovirus A,1
+99,Rhinovirus B,1
+100,Rhinovirus A,63
+101,SARS-CoV-2,211
+102,SARS-CoV-2,159
+102,Rhinovirus A,15
+103,Rhinovirus A,52
+104,Rhinovirus A,177
+104,Rhinovirus C,2
+105,Rhinovirus A,109
+106,Rhinovirus C,201
+107,Rhinovirus C,169
+108,Rhinovirus B,125
+109,Rhinovirus C,129
+109,Rhinovirus A,19
+110,Rhinovirus A,51
+110,Rhinovirus B,13
+111,Rhinovirus A,47
+111,Rhinovirus B,6
+112,Rhinovirus B,104
+113,Rhinovirus A,151
+114,Rhinovirus A,60
+115,Rhinovirus A,52
+116,Rhinovirus A,525
+117,Rhinovirus C,69
+118,Rhinovirus C,508
+119,HCoV-229E,136
+120,Rhinovirus B,122
+121,HCoV-OC43,102
+121,Rhinovirus C,6
+122,Rhinovirus A,201
+123,Rhinovirus B,78
+124,Rhinovirus C,434
+125,Rhinovirus A,128
+126,Rhinovirus B,74
+127,Rhinovirus A,77
+127,Rhinovirus B,47
+128,Rhinovirus A,345
+129,Rhinovirus C,58
+130,Rhinovirus C,232
+131,SARS-CoV-2,61
+132,SARS-CoV-2,176
+133,Rhinovirus A,125
+134,Rhinovirus C,87
+135,Rhinovirus C,92
+136,Rhinovirus A,90
+137,Rhinovirus A,64
+138,HCoV-229E,61
+138,Rhinovirus B,14
+139,Rhinovirus A,166
+140,Rhinovirus B,127
+141,HCoV-OC43,90
+142,Rhinovirus B,117
+143,Rhinovirus A,226
+144,Rhinovirus A,57
+145,Rhinovirus A,67
+146,Rhinovirus A,85
+147,Rhinovirus B,71
+147,HCoV-OC43,37
+148,Rhinovirus A,69
+148,Rhinovirus B,23
+149,SARS-CoV-2,51
+149,Rhinovirus B,26
+150,SARS-CoV-2,89
+151,Rhinovirus A,74
+152,Rhinovirus A,75
+153,Rhinovirus C,92
+153,Rhinovirus A,7
+154,Rhinovirus A,67
+155,Rhinovirus A,110
+156,Rhinovirus B,134
+157,Rhinovirus A,63
+158,Rhinovirus A,61
+159,Rhinovirus A,207
+160,Rhinovirus A,54
+161,HCoV-OC43,95
+162,Rhinovirus A,78
+162,HCoV-OC43,64
+163,Rhinovirus B,59
+163,HCoV-OC43,15
+164,Rhinovirus A,157
+165,Rhinovirus A,89
+166,Rhinovirus A,75
+167,HCoV-OC43,29
+167,Rhinovirus B,26
+168,Rhinovirus A,41
+168,Rhinovirus B,15
+169,Rhinovirus A,94
+170,HCoV-OC43,44
+170,Rhinovirus B,25
+171,HCoV-OC43,55
+172,HCoV-OC43,82
+172,Rhinovirus B,49
+173,SARS-CoV-2,130
+174,Rhinovirus A,65
+174,HCoV-OC43,19
+175,Rhinovirus A,130
+176,Rhinovirus A,55
+176,Rhinovirus B,21
+176,SARS-CoV-2,8
+177,SARS-CoV-2,50
+178,Rhinovirus B,66
+179,SARS-CoV-2,53
+179,Rhinovirus B,22
+180,Rhinovirus A,61
+181,Rhinovirus B,99
+181,Rhinovirus A,38
+182,SARS-CoV-2,78
+183,HCoV-OC43,78
+184,Rhinovirus A,81
+185,Rhinovirus A,78
+185,Rhinovirus B,42
+186,HCoV-OC43,66
+187,SARS-CoV-2,118
+187,HCoV-OC43,24
+188,Rhinovirus A,53
+188,HCoV-OC43,28
+189,SARS-CoV-2,160
+189,Rhinovirus B,14
+190,Rhinovirus A,73
+191,SARS-CoV-2,78
+192,Rhinovirus B,61
+193,Rhinovirus B,76
+194,Rhinovirus B,63
+194,Rhinovirus A,14
+195,Rhinovirus A,50
+195,Rhinovirus B,31
+195,HCoV-OC43,18
+196,SARS-CoV-2,50
+197,Rhinovirus B,85
+198,Rhinovirus A,58
+199,Rhinovirus B,63
+199,Rhinovirus A,19
+200,Rhinovirus A,120
+201,Rhinovirus A,54
+202,Rhinovirus B,56
+203,Rhinovirus B,69
+204,Rhinovirus B,69
+205,Rhinovirus B,56
+206,Rhinovirus A,175
+207,Rhinovirus B,93
+208,HCoV-229E,192
+209,Rhinovirus B,70
+210,Rhinovirus C,36
+210,Rhinovirus A,18
+211,Rhinovirus A,72
+211,Rhinovirus C,2
+211,Rhinovirus B,1
+212,Rhinovirus B,62
+213,Rhinovirus B,66
+214,Rhinovirus B,166
+214,Flu A PB1,1
+215,HCoV-229E,90
+216,Rhinovirus A,56
+217,Rhinovirus A,64
+218,Rhinovirus A,151
+218,SARS-CoV-2,34
+219,Rhinovirus B,97
+220,Rhinovirus A,74
+221,Rhinovirus A,96
+222,Rhinovirus A,90
+223,Rhinovirus B,44
+223,Rhinovirus A,30
+224,Rhinovirus B,205
+225,Rhinovirus B,71
+226,Rhinovirus B,74
+227,Rhinovirus B,120
+228,Rhinovirus A,473
+229,Rhinovirus A,127
+230,Rhinovirus A,82
+231,Rhinovirus B,51
+232,Rhinovirus B,42
+232,Rhinovirus A,17
+233,Rhinovirus B,83
+234,HCoV-OC43,41
+234,Rhinovirus B,37
+235,SARS-CoV-2,75
+235,Rhinovirus A,49
+236,Rhinovirus B,92
+236,HCoV-OC43,40
+237,HCoV-229E,161
+238,HCoV-229E,333
+239,Rhinovirus A,109
+240,Rhinovirus B,77
+241,Rhinovirus B,65
+241,HCoV-OC43,12
+241,Rhinovirus A,8
+242,Rhinovirus A,40
+242,Rhinovirus B,10
+243,SARS-CoV-2,104
+244,Rhinovirus A,119
+245,Rhinovirus B,114
+246,Rhinovirus B,81
+247,HCoV-OC43,39
+247,Rhinovirus B,28
+247,Rhinovirus A,6
+248,HCoV-OC43,106
+249,SARS-CoV-2,165
+250,Rhinovirus B,52
+251,Rhinovirus B,75
+252,Rhinovirus B,64
+253,Rhinovirus A,162
+254,SARS-CoV-2,76
+255,Rhinovirus B,98
+256,Rhinovirus B,129
+257,Rhinovirus A,98
+258,HCoV-OC43,61
+259,Rhinovirus A,54
+260,Rhinovirus B,168
+261,Rhinovirus B,100
+262,Rhinovirus B,58
+263,Rhinovirus A,199
+264,Rhinovirus A,63
+264,Flu A PB2,2
+265,Rhinovirus A,53
+265,SARS-CoV-2,24
+266,Rhinovirus A,135
+267,Rhinovirus A,111
+268,Rhinovirus A,64
+269,Rhinovirus A,170
+270,HCoV-OC43,138
+271,HCoV-OC43,56
+272,Rhinovirus B,68
+273,Rhinovirus B,52
+274,Rhinovirus B,59
+274,HCoV-OC43,11
+275,SARS-CoV-2,53
+276,SARS-CoV-2,94
+277,Rhinovirus A,123
+278,Rhinovirus B,104
+279,SARS-CoV-2,71
+280,SARS-CoV-2,74
+281,Rhinovirus B,65
+282,Rhinovirus B,97
+283,Rhinovirus A,207
+283,HCoV-OC43,51
+283,Rhinovirus B,33
+284,Rhinovirus A,52
+285,Rhinovirus A,78
+286,Rhinovirus A,64
+286,HCoV-OC43,16
+287,Rhinovirus A,46
+287,Rhinovirus B,45
+288,Rhinovirus A,108
+289,Rhinovirus B,107
+290,Rhinovirus A,145
+291,Rhinovirus A,187
+292,Rhinovirus B,93
+293,Rhinovirus B,53
+294,Rhinovirus B,50
+295,Rhinovirus A,111
+296,Rhinovirus A,170
+297,HCoV-OC43,73
+297,Rhinovirus C,34
+297,Rhinovirus A,1
+298,Rhinovirus A,68
+299,SARS-CoV-2,214
+299,Rhinovirus B,21
+300,Rhinovirus A,141
+301,HCoV-229E,76
+302,HCoV-229E,72
+303,Rhinovirus B,131
+303,HCoV-OC43,18
+304,Rhinovirus A,61
+305,Rhinovirus B,65
+306,Rhinovirus B,52
+307,Rhinovirus A,249
+308,Rhinovirus A,462
+309,Rhinovirus C,582
+310,Rhinovirus C,59
+311,Rhinovirus B,86
+311,SARS-CoV-2,21
+311,Rhinovirus A,1
+312,SARS-CoV-2,193
+312,Rhinovirus B,36
+313,Rhinovirus A,104
+314,Rhinovirus A,66
+315,Rhinovirus B,93
+316,HCoV-OC43,65
+317,Rhinovirus A,90
+318,Rhinovirus A,107
+319,Rhinovirus A,125
+320,Rhinovirus A,188
+321,Rhinovirus A,105
+322,Rhinovirus A,62
+323,Rhinovirus A,119
+324,HCoV-OC43,61
+325,Rhinovirus A,86
+325,Rhinovirus B,36
+325,SARS-CoV-2,35
+326,HCoV-OC43,62
+327,Rhinovirus A,166
+328,Rhinovirus B,65
+328,HCoV-OC43,33
+329,Rhinovirus B,162
+329,SARS-CoV-2,18
+329,Rhinovirus A,12
+330,Rhinovirus B,119
+331,Rhinovirus A,117
+331,HCoV-OC43,40
+331,Rhinovirus B,21
+332,Rhinovirus B,146
+333,Rhinovirus A,127
+334,Rhinovirus B,67
+335,HCoV-OC43,72
+336,Rhinovirus B,113
+337,Rhinovirus B,70
+338,Rhinovirus B,74
+338,Rhinovirus A,38
+339,Rhinovirus B,185
+340,Rhinovirus B,189
+341,Rhinovirus B,146
+342,Rhinovirus A,33
+342,Rhinovirus B,25
+343,Rhinovirus B,102
+343,HCoV-OC43,42
+344,HCoV-OC43,46
+344,Rhinovirus B,44
+344,Rhinovirus A,23
+345,Rhinovirus B,55
+345,Rhinovirus A,40
+345,HCoV-OC43,36
+346,Rhinovirus A,55
+347,Rhinovirus A,223
+348,Rhinovirus B,150
+349,Rhinovirus A,394
+350,Rhinovirus A,124
+350,Rhinovirus B,37
+351,Rhinovirus B,58
+352,Rhinovirus B,60
+353,HCoV-OC43,39
+353,Rhinovirus A,38
+353,Rhinovirus C,1
+354,Rhinovirus A,118
+355,Rhinovirus A,147
+355,Flu A PB1,1
+356,Rhinovirus A,53
+357,Rhinovirus A,66
+358,Rhinovirus A,257
+359,Rhinovirus B,35
+359,Rhinovirus A,26
+360,Rhinovirus A,88
+361,Rhinovirus A,76
+362,Rhinovirus A,35
+362,SARS-CoV-2,28
+363,Rhinovirus A,80
+364,SARS-CoV-2,114
+365,Rhinovirus B,102
+366,Rhinovirus B,94
+366,Rhinovirus A,39
+367,Rhinovirus B,68
+367,Rhinovirus A,33
+367,HCoV-OC43,18
+368,Rhinovirus B,65
+369,Rhinovirus B,83
+369,Flu A PA,5
+370,HCoV-229E,191
+371,Rhinovirus B,72
+372,Rhinovirus A,82
+373,Rhinovirus B,78
+374,Rhinovirus B,116
+375,Rhinovirus B,127
+376,Rhinovirus A,50
+377,Rhinovirus C,63
+378,HCoV-OC43,90
+379,HCoV-OC43,81
+380,Rhinovirus B,80
+381,Rhinovirus B,105
+382,Rhinovirus B,92
+383,Rhinovirus B,130
+384,Rhinovirus B,70
+385,Rhinovirus A,56
+386,Rhinovirus A,77
+387,Rhinovirus B,187
+388,Rhinovirus C,64
+388,Rhinovirus A,2
+389,Rhinovirus C,51
+389,Rhinovirus A,2
+390,Rhinovirus C,352
+391,Rhinovirus C,81
+392,Rhinovirus A,91
+393,Rhinovirus B,73
+394,HCoV-OC43,153
+395,SARS-CoV-2,51
+396,Rhinovirus B,124
+397,Rhinovirus C,142
+398,SARS-CoV-2,73
+399,Rhinovirus B,94
+400,Rhinovirus A,302
+401,Rhinovirus A,69
+402,Rhinovirus A,104
+403,Rhinovirus B,60
+404,Rhinovirus A,80
+405,Rhinovirus A,76
+405,Rhinovirus B,53
+405,HCoV-229E,43
+406,Rhinovirus B,54
+407,HCoV-OC43,110
+408,Rhinovirus B,77
+409,Rhinovirus B,91
+410,SARS-CoV-2,51
+411,SARS-CoV-2,87
+412,Rhinovirus B,59
+413,SARS-CoV-2,121
+414,Rhinovirus B,43
+414,Rhinovirus A,28
+414,HCoV-OC43,21
+415,Rhinovirus B,140
+416,Rhinovirus A,73
+416,Rhinovirus B,28
+417,HCoV-OC43,166
+418,Rhinovirus B,102
+419,Rhinovirus A,70
+420,Rhinovirus A,71
+421,Rhinovirus B,73
+422,Rhinovirus A,52
+423,Rhinovirus A,72
+424,Rhinovirus B,51
+425,Rhinovirus B,62
+426,Rhinovirus B,53
+427,Rhinovirus B,90
+427,Rhinovirus A,24
+428,Rhinovirus B,61
+429,Rhinovirus A,156
+430,SARS-CoV-2,67
+430,Rhinovirus A,40
+431,Rhinovirus A,104
+432,SARS-CoV-2,175
+433,SARS-CoV-2,73
+434,Rhinovirus B,118
+435,SARS-CoV-2,53
+436,SARS-CoV-2,66
+437,Rhinovirus A,128
+438,HCoV-229E,222
+439,Rhinovirus A,248
+440,Rhinovirus A,55
+441,Rhinovirus B,145
+442,Rhinovirus B,58
+443,Rhinovirus A,67
+444,Rhinovirus A,64
+445,Rhinovirus B,132
+446,Rhinovirus A,73
+447,Rhinovirus C,99
+448,Rhinovirus C,62
+449,Rhinovirus A,52
+450,Rhinovirus A,84
+451,SARS-CoV-2,73
+452,SARS-CoV-2,125
+453,Rhinovirus C,41
+453,Rhinovirus B,26
+453,SARS-CoV-2,22
+454,Rhinovirus B,37
+454,Rhinovirus A,34
+455,Rhinovirus B,85
+456,Rhinovirus B,153
+457,Rhinovirus A,190
+457,Rhinovirus C,7
+457,Rhinovirus B,2
+458,Rhinovirus B,116
+459,HCoV-OC43,43
+459,SARS-CoV-2,41
+459,HCoV-229E,1
+460,Rhinovirus A,227
+461,Rhinovirus A,59
+462,HCoV-229E,224
+463,SARS-CoV-2,51
+463,HCoV-OC43,11
+464,Rhinovirus A,94
+465,Rhinovirus C,66
+466,Rhinovirus C,118
+467,Rhinovirus A,99
+468,Rhinovirus B,115
+469,Rhinovirus A,93
+470,Rhinovirus A,47
+470,Rhinovirus B,23
+470,SARS-CoV-2,20
+471,SARS-CoV-2,106
+472,Rhinovirus B,82
+473,Rhinovirus B,95
+474,Rhinovirus B,122
+475,Rhinovirus B,90
+475,HCoV-OC43,48
+475,Rhinovirus A,46
+475,SARS-CoV-2,37
+476,Rhinovirus A,148
+477,HCoV-229E,94
+477,SARS-CoV-2,39
+478,Rhinovirus A,54
+479,Rhinovirus A,68
+480,Rhinovirus A,51
+480,Rhinovirus B,39
+481,Rhinovirus A,145
+482,Rhinovirus A,149
+483,Rhinovirus B,106
+483,Rhinovirus A,12
+484,Rhinovirus B,60
+485,HCoV-229E,128
+486,Rhinovirus B,53
+487,Rhinovirus B,81
+488,HCoV-229E,56
+488,Rhinovirus A,21
+489,Rhinovirus A,95
+490,Rhinovirus A,63
+491,Rhinovirus B,64
+492,Rhinovirus B,197
+493,Rhinovirus A,58
+494,Rhinovirus B,153
+495,Rhinovirus A,66
+496,Rhinovirus B,51
+497,Rhinovirus B,223
+498,SARS-CoV-2,54
+499,SARS-CoV-2,102
+500,HCoV-OC43,94
+501,Rhinovirus B,62
+502,Rhinovirus A,64
+503,Rhinovirus A,120
+504,HCoV-OC43,85
+505,Rhinovirus A,131
+506,Rhinovirus A,94
+507,Rhinovirus B,133
+507,SARS-CoV-2,42
+507,Rhinovirus A,27
+508,HCoV-229E,59
+508,Rhinovirus B,27
+509,Rhinovirus B,74
+509,Rhinovirus A,43
+510,Rhinovirus A,124
+511,HCoV-OC43,213
+512,Rhinovirus C,108
+512,Rhinovirus A,25
+513,Rhinovirus A,201
+513,Rhinovirus C,1
+514,Rhinovirus B,33
+514,Rhinovirus A,13
+514,Rhinovirus C,7
+515,Rhinovirus A,99
+516,Rhinovirus A,87
+517,Rhinovirus A,56
+518,Rhinovirus A,68
+518,SARS-CoV-2,30
+518,Rhinovirus B,15
+519,Rhinovirus A,70
+520,Rhinovirus B,148
+521,HCoV-OC43,29
+521,Rhinovirus A,21
+521,Rhinovirus B,21
+522,Rhinovirus A,54
+523,Rhinovirus A,54
+524,Rhinovirus A,52
+524,SARS-CoV-2,44
+525,Rhinovirus C,103
+526,Rhinovirus C,131
+527,SARS-CoV-2,159
+527,HCoV-229E,46
+528,Rhinovirus B,159
+529,Rhinovirus A,48
+529,Rhinovirus B,21
+529,HCoV-229E,14
+529,SARS-CoV-2,8
+529,HCoV-OC43,3
+529,Rhinovirus C,2
+530,HCoV-229E,69
+531,HCoV-229E,91
+532,Rhinovirus A,122
+532,HCoV-OC43,12
+533,Rhinovirus B,154
+533,HCoV-OC43,105
+533,Rhinovirus A,35
+533,SARS-CoV-2,10
+534,Rhinovirus A,159
+535,HCoV-OC43,52
+535,Rhinovirus B,19
+536,Rhinovirus C,71
+536,Rhinovirus A,22
+537,Rhinovirus C,144
+537,Rhinovirus A,29
+538,Rhinovirus A,103
+539,HCoV-OC43,93
+540,Rhinovirus B,67
+540,HCoV-OC43,29
+541,SARS-CoV-2,75
+541,Rhinovirus B,29
+541,Rhinovirus A,19
+542,Rhinovirus B,51
+542,Rhinovirus A,38
+543,HCoV-OC43,90
+544,HCoV-OC43,60
+545,Rhinovirus C,44
+545,Rhinovirus A,8
+545,Rhinovirus B,5
+546,Rhinovirus A,75
+547,Rhinovirus A,37
+547,HCoV-OC43,16
+548,Rhinovirus B,88
+549,SARS-CoV-2,221
+550,Rhinovirus A,319
+551,Rhinovirus A,96
+552,Rhinovirus A,76
+553,Rhinovirus A,55
+554,Rhinovirus A,100
+555,HCoV-229E,84
+556,SARS-CoV-2,161
+557,SARS-CoV-2,66
+558,HCoV-229E,156
+559,HCoV-229E,108
+560,HCoV-OC43,65
+561,Rhinovirus A,232
+562,Rhinovirus A,69
+563,Rhinovirus A,96
+564,Rhinovirus A,84
+564,Rhinovirus C,1
+565,Rhinovirus A,66
+566,Rhinovirus A,99
+567,Rhinovirus B,108
+568,Rhinovirus A,95
+569,HCoV-229E,60
+570,HCoV-229E,118
+571,Rhinovirus B,144
+572,Rhinovirus B,82
+572,Rhinovirus A,31
+573,HCoV-OC43,55
+574,Rhinovirus A,70
+574,SARS-CoV-2,12
+575,Rhinovirus A,98
+576,Rhinovirus A,51
+577,Rhinovirus A,58
+578,HCoV-OC43,49
+578,Rhinovirus B,23
+579,Rhinovirus B,151
+579,Rhinovirus A,18
+580,HCoV-229E,56
+581,HCoV-229E,97
+582,HCoV-OC43,67
+583,HCoV-OC43,54
+584,Rhinovirus A,121
+585,Rhinovirus A,54
+586,SARS-CoV-2,108
+587,HCoV-229E,130
+588,HCoV-229E,174
+589,Rhinovirus A,80
+589,Rhinovirus B,15
+589,Rhinovirus C,12
+589,SARS-CoV-2,6
+589,HCoV-OC43,1
+590,HCoV-229E,105
+591,HCoV-229E,102
+592,Rhinovirus A,81
+593,Rhinovirus A,533
+594,Rhinovirus A,71
+595,Rhinovirus A,79
+596,Rhinovirus A,253
+597,HCoV-229E,184
+598,Rhinovirus A,58
+599,Rhinovirus A,59
+599,HCoV-229E,1
+600,Rhinovirus A,120
+601,Rhinovirus A,67
+602,Rhinovirus A,99
+603,HCoV-229E,59
+604,HCoV-229E,104
+605,Rhinovirus A,86
+606,Rhinovirus A,116
+607,Rhinovirus A,70
+608,Rhinovirus A,50
+609,SARS-CoV-2,144
+610,SARS-CoV-2,108
+611,Rhinovirus A,66
+612,Rhinovirus A,175
+613,Rhinovirus A,185
+614,HCoV-229E,193
+615,HCoV-229E,153
+616,HCoV-229E,74
+617,HCoV-229E,98
+618,HCoV-229E,74
+619,Rhinovirus A,74
+620,HCoV-229E,175
+621,HCoV-229E,57
+622,HCoV-229E,58
+623,HCoV-229E,140
+624,Rhinovirus B,111
+625,HCoV-229E,63
+626,HCoV-229E,184
+627,Rhinovirus A,160
+628,Rhinovirus A,113
+629,Rhinovirus A,89
+630,HCoV-229E,114
+631,HCoV-229E,161
+632,Rhinovirus A,94
+633,Rhinovirus A,517
+634,HCoV-229E,114
+635,HCoV-229E,87
+636,Rhinovirus A,84
+637,HCoV-229E,128
+638,Rhinovirus A,142
+639,HCoV-229E,87
+640,HCoV-229E,107
+641,Rhinovirus A,78
+642,Rhinovirus A,179
+643,HCoV-229E,109
+644,Rhinovirus A,88
+645,Rhinovirus A,197
+646,Rhinovirus A,69
+647,Rhinovirus A,178
+648,Rhinovirus A,410
+649,HCoV-229E,139
+650,HCoV-229E,238
+651,HCoV-229E,109
+652,HCoV-229E,67
+653,HCoV-229E,84
+654,HCoV-229E,69
+655,Rhinovirus A,159
+656,Rhinovirus A,66
+657,HCoV-229E,147
+658,HCoV-229E,114
+659,HCoV-229E,53
+660,HCoV-229E,119
+661,Rhinovirus A,590
+662,Rhinovirus A,93
+663,HCoV-229E,122
+664,HCoV-229E,101
+665,Rhinovirus A,53
+666,Rhinovirus A,58
+667,HCoV-229E,88
+668,HCoV-229E,70
+669,HCoV-229E,75
+670,HCoV-229E,85
+671,HCoV-229E,76
+672,HCoV-229E,105
+673,HCoV-229E,221
+674,HCoV-229E,117
+675,HCoV-229E,223
+675,Rhinovirus A,1
+676,HCoV-229E,191
+677,Rhinovirus A,155
+678,Rhinovirus A,88
+679,HCoV-229E,52
+680,HCoV-229E,63
+681,HCoV-229E,51
+682,HCoV-229E,83
+683,HCoV-229E,54
+684,Rhinovirus A,163
+685,Rhinovirus A,64
